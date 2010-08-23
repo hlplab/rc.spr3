@@ -73,7 +73,7 @@ var items = [
     [["StimZero.OriginalThat",[28,7]], ds, {s: "I have a few favorites@NPHEAD1 I@RCSUBJ1 use@RCVERB1 more than others."}],
     [["StimThat.OriginalThat",[28,7]], ds, {s: "I have a few favorites@NPHEAD1 that@COMPL I@RCSUBJ1 use@RCVERB1 more than others."}],
     ["filler", ds, {s: "And it is so easy."}],
-    ["filler", ds, {s: "We, as I said, living in an area of Washington, D C. We definitely see this."},
+    ["filler", ds, {s: "We, as I said, living in an area of Washington_D.C. We definitely see this."},
         qs, {q: "Are there no residential areas in Washington D.C?" , hasCorrect: "No", randomOrder: false}],
     [["StimZero.OriginalZero",[31,7]], ds, {s: "And it is everything@NPHEAD1 it@RCSUBJ1 is@RCVERB1 supposed@RCVERB2 to be."},
         qs, {q: "Is it living up to expectations?" , hasCorrect: "Yes", randomOrder: false}],
