@@ -40,7 +40,7 @@ var items = [
     [["StimThat.OriginalThat",[10,7]], ds, {s: "And when it is cold I am wearing sweatpants unless I am going to something special@NPHEAD1 that@COMPL my@RCSUBJ1 daughter@RCSUBJ2 is@RCVERB1 doing@RCVERB2 or something like that."}],
     [["StimZero.OriginalThat",[10,7]], ds, {s: "And when it is cold I am wearing sweatpants unless I am going to something special@NPHEAD1 my@RCSUBJ1 daughter@RCSUBJ2 is@RCVERB1 doing@RCVERB2 or something like that."}],
     [["filler", 11], ds, {s: "With all of you living so close together."}],
-    [["filler", 12, ds, {s: "You clip recipes."},
+    [["filler", 12], ds, {s: "You clip recipes."},
         qs, {q: "Can recipes be clipped?" , hasCorrect: "Yes", randomOrder: false}],
     [["StimThat.OriginalZero",[13,7]], ds, {s: "And there is only so much football@NPHEAD1 that@COMPL you@RCSUBJ1 can@RCVERB1 watch.@RCVERB2"}],
     [["StimZero.OriginalZero",[13,7]], ds, {s: "And there is only so much football@NPHEAD1 you@RCSUBJ1 can@RCVERB1 watch.@RCVERB2"}],
