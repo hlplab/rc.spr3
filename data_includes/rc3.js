@@ -1,7 +1,9 @@
 var shuffleSequence = seq("intro", "info", "startprac", "practice", "endprac", sepWith("sep", anyOf("filler", startsWith("StimZero"), startsWith("StimThat"))), "contact", "sr", "code");
 
-var ds = "RegionedSentence"
-var qs = "Question"
+var pastworkers = ["A18C1OETHYLHZY", "A1CX0MFDJHAJPG", "A1RWNYJA5X25YH", "A1WK525EJS3SYA", "A1X8IL45JKM9TF", "A253Q11TZPQPIZ", "A2FJUD15XITAOC", "A2HM35CWB7IIFM", "A2LO9Y9SJHXPR", "A2RP4Y1BDU8F8A", "A30JQZFOA435PX", "A31WOUTVXO1VE4", "A31Z06KS8M1B88", "A363H2EKG4U5IJ", "A3KFA3FHL8F89R", "A3O749MMVC22QA", "A3OT61DL0DY283", "A3SWH7DHWHP0BO", "A3TK9CLBA65ZZE", "A3ULQTETISV24Z", "A3UWBL2XG38CO8", "A3VQYU541S4RDA", "A44LL84B4CKIK", "A98XHW6B1VSSQ"];
+
+var ds = "RegionedSentence";
+var qs = "Question";
 
 var manualSendResults = true;
 
@@ -22,7 +24,12 @@ var items = [
     ["sr", "__SendResults__", { }],
     ["sep", "Separator", {}],
     ["intro", "Message", {consentRequired: true, html: {include: "intro.html"}}],
-    ["info", "Form", {html: {include: "info.html"}}],
+	["info", "Form", {
+        html: {include: "info.html"},
+        validators: {
+            workerid: function(s) {if (pastworkers.indexOf(s) == -1) return true; else return "You have already done an RC SPR experiment";}
+        }
+    }],
     ["startprac", "Message", {consentRequired: false, html: {include: "start_practice.html"}}],
     ["practice", ds, {s: "She knows how to twist this around."}],
     ["practice", ds, {s: "But they're so expensive."}, 
